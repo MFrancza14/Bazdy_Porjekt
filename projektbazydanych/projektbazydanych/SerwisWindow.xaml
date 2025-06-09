@@ -1,0 +1,27 @@
+<Window x:Class="projektbazydanych.SerwisWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Historia serwisowa" Height="400" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+
+            <TextBlock Text="Lista serwisow"
+                       FontSize="18"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10"/>
+
+            <DataGrid x:Name="SerwisGrid" AutoGenerateColumns="False" Height="250" Margin="0,0,0,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Pojazd" Binding="{Binding Pojazd}" Width="*"/>
+                    <DataGridTextColumn Header="Opis" Binding="{Binding Opis}" Width="2*"/>
+                    <DataGridTextColumn Header="Data" Binding="{Binding Data}" Width="*"/>
+                    <DataGridTextColumn Header="Koszt" Binding="{Binding Koszt}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Content="Dodaj wpis serwisowy" Width="170" Click="DodajSerwis_Click" HorizontalAlignment="Left"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

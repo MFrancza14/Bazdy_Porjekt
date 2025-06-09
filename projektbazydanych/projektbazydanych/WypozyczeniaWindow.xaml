@@ -1,0 +1,29 @@
+<Window x:Class="projektbazydanych.WypozyczeniaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lista wypozyczen" Height="400" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+
+            <TextBlock Text="Lista wypozyczen"
+                       FontSize="18"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10"/>
+
+            <DataGrid x:Name="WypozyczeniaGrid" AutoGenerateColumns="False" Height="250" Margin="0,0,0,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Klient" Binding="{Binding Klient}" Width="*"/>
+                    <DataGridTextColumn Header="Pojazd" Binding="{Binding Pojazd}" Width="*"/>
+                    <DataGridTextColumn Header="Data startu" Binding="{Binding DataStart}" Width="*"/>
+                    <DataGridTextColumn Header="Czas (h)" Binding="{Binding Czas}" Width="*"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Content="Dodaj wypozyczenie" Width="150" Click="DodajWypozyczenie_Click" HorizontalAlignment="Left"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
+
