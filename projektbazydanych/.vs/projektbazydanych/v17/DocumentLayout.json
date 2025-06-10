@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\data\\wypozyczalniacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\data\\wypozyczalniacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\models\\kierowca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\models\\kierowca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\pojazdywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\pojazdywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\models\\pojazd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\models\\pojazd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\kierowcywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\kierowcywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\klientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\klientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|c:\\users\\kacper\\documents\\github\\5 spotkanie\\bazdy_porjekt\\projektbazydanych\\projektbazydanych\\klientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F956BF36-33A6-4035-9CB1-B368B75D04EA}|projektbazydanych\\projektbazydanych.csproj|solutionrelative:projektbazydanych\\klientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250609230548_AddKierowcy.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs",
+              "RelativeToolTip": "projektbazydanych\\Migrations\\20250609230548_AddKierowcy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T23:05:48.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kierowca.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Models\\Kierowca.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Models\\Kierowca.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Models\\Kierowca.cs",
+              "RelativeToolTip": "projektbazydanych\\Models\\Kierowca.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T23:04:31.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PojazdyWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\PojazdyWindow.xaml.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\PojazdyWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\PojazdyWindow.xaml.cs",
+              "RelativeToolTip": "projektbazydanych\\PojazdyWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:51:04.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WypozyczalniaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Data\\WypozyczalniaContext.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Data\\WypozyczalniaContext.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Data\\WypozyczalniaContext.cs",
+              "RelativeToolTip": "projektbazydanych\\Data\\WypozyczalniaContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:43:49.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250609225006_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs",
+              "RelativeToolTip": "projektbazydanych\\Migrations\\20250609225006_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:50:06.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250609224716_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs",
+              "RelativeToolTip": "projektbazydanych\\Migrations\\20250609224716_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:47:16.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pojazd.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Models\\Pojazd.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\Models\\Pojazd.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\Models\\Pojazd.cs",
+              "RelativeToolTip": "projektbazydanych\\Models\\Pojazd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:40:29.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KierowcyWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KierowcyWindow.xaml",
+              "RelativeDocumentMoniker": "projektbazydanych\\KierowcyWindow.xaml",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KierowcyWindow.xaml",
+              "RelativeToolTip": "projektbazydanych\\KierowcyWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T22:26:04.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KlientWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KlientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\KlientWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KlientWindow.xaml.cs",
+              "RelativeToolTip": "projektbazydanych\\KlientWindow.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:25:47.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "KlientWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KlientWindow.xaml",
+              "RelativeDocumentMoniker": "projektbazydanych\\KlientWindow.xaml",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\KlientWindow.xaml",
+              "RelativeToolTip": "projektbazydanych\\KlientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T22:25:42.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\App.xaml",
+              "RelativeDocumentMoniker": "projektbazydanych\\App.xaml",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\App.xaml",
+              "RelativeToolTip": "projektbazydanych\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T22:25:36.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\App.xaml.cs",
+              "RelativeDocumentMoniker": "projektbazydanych\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Documents\\GitHub\\5 Spotkanie\\Bazdy_Porjekt\\projektbazydanych\\projektbazydanych\\App.xaml.cs",
+              "RelativeToolTip": "projektbazydanych\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T22:25:30.115Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -12,24 +12,30 @@ namespace projektbazydanych
         private void OtworzPojazdy_Click(object sender, RoutedEventArgs e)
         {
             PojazdyWindow pojazdyWindow = new PojazdyWindow();
-            pojazdyWindow.Show();
+            pojazdyWindow.ShowDialog();
         }
 
         private void OtworzWypozyczenia_Click(object sender, RoutedEventArgs e)
         {
             WypozyczeniaWindow win = new WypozyczeniaWindow();
-            win.Show();
+            win.ShowDialog();
         }
 
         private void OtworzSerwis_Click(object sender, RoutedEventArgs e)
         {
             SerwisWindow serwisWindow = new SerwisWindow();
-            serwisWindow.Show();
+            serwisWindow.ShowDialog();
         }
         private void OtworzKierowcow_Click(object sender, RoutedEventArgs e)
         {
             KierowcyWindow kierowcyWindow = new KierowcyWindow();
-            kierowcyWindow.Show();
+            kierowcyWindow.ShowDialog();
+        }
+        private void Wyloguj_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
 
 

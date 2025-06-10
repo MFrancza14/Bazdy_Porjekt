@@ -1,32 +1,16 @@
 ﻿using System;
+using projektbazydanych.Data;
+using projektbazydanych.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 
 namespace projektbazydanych
 {
     public partial class KlientWindow : Window
     {
-        // Klasa pojazdu
-        public class Pojazd
-        {
-            public string Model { get; set; }
-            public int Rok { get; set; }
-            public double CenaZaGodzine { get; set; }
-            public string Status { get; set; }
-        }
+        private WypozyczalniaContext db = new WypozyczalniaContext();
 
-        // Klasa historii wypożyczeń
-        public class Wypozyczenie
-        {
-            public string Model { get; set; }
-            public double Czas { get; set; }
-            public double Koszt { get; set; }
-        }
-
-        private List<Pojazd> pojazdy = new List<Pojazd>();
-        private List<Wypozyczenie> historia = new List<Wypozyczenie>();
-
-        // aktywne wypożyczenie
         private Pojazd aktywnyPojazd = null;
         private double aktywnyCzas;
         private double aktywnyKoszt;
@@ -35,19 +19,15 @@ namespace projektbazydanych
         {
             InitializeComponent();
 
-            // przykładowe dane pojazdów
-            pojazdy.Add(new Pojazd { Model = "Toyota Corolla", Rok = 2020, CenaZaGodzine = 20, Status = "Wolny" });
-            pojazdy.Add(new Pojazd { Model = "Ford Focus", Rok = 2019, CenaZaGodzine = 18, Status = "Wolny" });
-            pojazdy.Add(new Pojazd { Model = "Skoda Octavia", Rok = 2022, CenaZaGodzine = 25, Status = "Wypozyczony" });
-
-            PojazdyGrid.ItemsSource = pojazdy;
+            PojazdyGrid.ItemsSource = db.Pojazdy.ToList();
+            HistoriaGrid.ItemsSource = db.Wypozyczenia.ToList();
         }
 
         private void Wypozycz_Click(object sender, RoutedEventArgs e)
         {
             if (aktywnyPojazd != null)
             {
-                MessageBox.Show("Najpierw zakoncz aktualne wypozyczenie.");
+                MessageBox.Show("Najpierw zakończ aktualne wypożyczenie.");
                 return;
             }
 
@@ -56,19 +36,23 @@ namespace projektbazydanych
                 if (double.TryParse(CzasTextBox.Text, out double czas))
                 {
                     double koszt = czas * selected.CenaZaGodzine;
-                    PodsumowanieTextBlock.Text = $"Model: {selected.Model}, Czas: {czas} h, Koszt: {koszt} zl";
+
+                    PodsumowanieTextBlock.Text = $"Model: {selected.Model}, Czas: {czas} h, Koszt: {koszt} zł";
 
                     selected.Status = "Wypozyczony";
+                    db.Pojazdy.Update(selected);
+
                     aktywnyPojazd = selected;
                     aktywnyCzas = czas;
                     aktywnyKoszt = koszt;
 
-                    PojazdyGrid.Items.Refresh();
+                    db.SaveChanges();
+                    PojazdyGrid.ItemsSource = db.Pojazdy.ToList();
                     ZakonczBtn.IsEnabled = true;
                 }
                 else
                 {
-                    MessageBox.Show("Wprowadz poprawny czas (liczba).");
+                    MessageBox.Show("Wprowadź poprawny czas (liczba).");
                 }
             }
             else
@@ -82,18 +66,23 @@ namespace projektbazydanych
             if (aktywnyPojazd != null)
             {
                 aktywnyPojazd.Status = "Wolny";
-                historia.Add(new Wypozyczenie
+                db.Pojazdy.Update(aktywnyPojazd);
+
+                db.Wypozyczenia.Add(new Wypozyczenie
                 {
-                    Model = aktywnyPojazd.Model,
-                    Czas = aktywnyCzas,
+                    Klient = "Użytkownik", // Można rozbudować o logowanie
+                    Pojazd = aktywnyPojazd.Model,
+                    DataStart = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm"),
+                    Czas = (int)aktywnyCzas,
+                    Status = "Zakonczone",
                     Koszt = aktywnyKoszt
                 });
 
-                PodsumowanieTextBlock.Text = "";
-                PojazdyGrid.Items.Refresh();
+                db.SaveChanges();
 
-                HistoriaGrid.ItemsSource = null;
-                HistoriaGrid.ItemsSource = historia;
+                PodsumowanieTextBlock.Text = "";
+                PojazdyGrid.ItemsSource = db.Pojazdy.ToList();
+                HistoriaGrid.ItemsSource = db.Wypozyczenia.ToList();
 
                 aktywnyPojazd = null;
                 aktywnyCzas = 0;

@@ -1,56 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
+using projektbazydanych.Data;
+using projektbazydanych.Models;
+using System;
+using System.Linq;
 using System.Windows;
 
 namespace projektbazydanych
 {
     public partial class SerwisWindow : Window
     {
-        public class Serwis
-        {
-            public string Pojazd { get; set; }
-            public string Opis { get; set; }
-            public string Data { get; set; }
-            public double Koszt { get; set; }
-        }
-
-        private List<Serwis> serwisy = new List<Serwis>();
+        private WypozyczalniaContext db = new WypozyczalniaContext();
 
         public SerwisWindow()
         {
             InitializeComponent();
+            WczytajSerwisy();
+        }
 
-            // Przykładowe dane
-            serwisy.Add(new Serwis
-            {
-                Pojazd = "Toyota Corolla",
-                Opis = "Wymiana oleju i filtrów",
-                Data = "2025-05-15",
-                Koszt = 450.00
-            });
-
-            serwisy.Add(new Serwis
-            {
-                Pojazd = "Ford Focus",
-                Opis = "Naprawa układu hamulcowego",
-                Data = "2025-06-01",
-                Koszt = 820.00
-            });
-
-            SerwisGrid.ItemsSource = serwisy;
+        private void WczytajSerwisy()
+        {
+            SerwisGrid.ItemsSource = db.Serwisy.ToList();
         }
 
         private void DodajSerwis_Click(object sender, RoutedEventArgs e)
         {
-            serwisy.Add(new Serwis
+            var nowy = new Serwis
             {
                 Pojazd = "Skoda Octavia",
                 Opis = "Przegląd techniczny",
                 Data = DateTime.Now.ToString("yyyy-MM-dd"),
                 Koszt = 300.00
-            });
+            };
 
-            SerwisGrid.Items.Refresh();
+            db.Serwisy.Add(nowy);
+            db.SaveChanges();
+            WczytajSerwisy();
+        }
+        private void UsunRekord_Click(object sender, RoutedEventArgs e)
+        {
+            if (SerwisGrid.SelectedItem is Serwis selected)
+            {
+                var result = MessageBox.Show($"Czy usunąć serwis pojazdu {selected.Pojazd}?", "Potwierdzenie", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    db.Serwisy.Remove(selected);
+                    db.SaveChanges();
+                    WczytajSerwisy();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Zaznacz rekord do usunięcia.");
+            }
         }
     }
 }

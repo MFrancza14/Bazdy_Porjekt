@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using projektbazydanych.Data;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -44,24 +45,32 @@ public partial class MainWindow : Window
         string login = LoginTextBox.Text;
         string haslo = PasswordBox.Password;
 
+        using var db = new WypozyczalniaContext();
+
         if (CheckKlient.IsChecked == true)
         {
-            // tu można dodać weryfikację loginu i hasła
-            KlientWindow klientWindow = new KlientWindow();
-            klientWindow.Show();
-            this.Close(); // zamknij okno logowania
+            var konto = db.KontaKlientow.FirstOrDefault(k => k.Login == login && k.Haslo == haslo);
+            if (konto != null)
+            {
+                new KlientWindow().Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nieprawidłowy login lub hasło klienta.");
+            }
         }
         else if (CheckPracownik.IsChecked == true)
         {
-            try
+            var konto = db.KontaPracownikow.FirstOrDefault(k => k.Login == login && k.Haslo == haslo);
+            if (konto != null)
             {
-                PracownikWindow pracownikWindow = new PracownikWindow();
-                pracownikWindow.Show();
-                this.Close(); // lub this.Hide();
+                new PracownikWindow().Show();
+                this.Close();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Blad przy otwieraniu panelu pracownika:\n" + ex.Message);
+                MessageBox.Show("Nieprawidłowy login lub hasło pracownika.");
             }
         }
         else

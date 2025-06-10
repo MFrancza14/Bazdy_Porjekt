@@ -1,4 +1,7 @@
-﻿using System;
+﻿using projektbazydanych.Data;
+using projektbazydanych.Models;
+using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Windows;
 
@@ -6,54 +9,50 @@ namespace projektbazydanych
 {
     public partial class WypozyczeniaWindow : Window
     {
-        public class Wypozyczenie
-        {
-            public string Klient { get; set; }
-            public string Pojazd { get; set; }
-            public string DataStart { get; set; }
-            public int Czas { get; set; }
-            public string Status { get; set; }
-        }
-
-        private List<Wypozyczenie> wypozyczenia = new List<Wypozyczenie>();
+        private WypozyczalniaContext db = new WypozyczalniaContext();
 
         public WypozyczeniaWindow()
         {
             InitializeComponent();
+            WczytajWypozyczenia();
+        }
 
-            wypozyczenia.Add(new Wypozyczenie
-            {
-                Klient = "Jan Kowalski",
-                Pojazd = "Toyota Corolla",
-                DataStart = "2025-06-01 10:00",
-                Czas = 48,
-                Status = "Aktywne"
-            });
-
-            wypozyczenia.Add(new Wypozyczenie
-            {
-                Klient = "Anna Nowak",
-                Pojazd = "Ford Focus",
-                DataStart = "2025-05-28 08:30",
-                Czas = 72,
-                Status = "Zakonczone"
-            });
-
-            WypozyczeniaGrid.ItemsSource = wypozyczenia;
+        private void WczytajWypozyczenia()
+        {
+            WypozyczeniaGrid.ItemsSource = db.Wypozyczenia.ToList();
         }
 
         private void DodajWypozyczenie_Click(object sender, RoutedEventArgs e)
         {
-            wypozyczenia.Add(new Wypozyczenie
+            var nowe = new Wypozyczenie
             {
                 Klient = "Tymczasowy Klient",
                 Pojazd = "Skoda Octavia",
                 DataStart = DateTime.Now.ToString("yyyy-MM-dd HH:mm"),
                 Czas = 24,
                 Status = "Aktywne"
-            });
+            };
 
-            WypozyczeniaGrid.Items.Refresh();
+            db.Wypozyczenia.Add(nowe);
+            db.SaveChanges();
+            WczytajWypozyczenia();
+        }
+        private void UsunRekord_Click(object sender, RoutedEventArgs e)
+        {
+            if (WypozyczeniaGrid.SelectedItem is Wypozyczenie selected)
+            {
+                var result = MessageBox.Show($"Czy usunąć wypożyczenie pojazdu {selected.Pojazd}?", "Potwierdzenie", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    db.Wypozyczenia.Remove(selected);
+                    db.SaveChanges();
+                    WczytajWypozyczenia();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Zaznacz rekord do usunięcia.");
+            }
         }
     }
 }
